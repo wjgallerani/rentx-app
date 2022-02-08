@@ -53,10 +53,15 @@ export function SchedulingDetails() {
         navigation.navigate('SchedulingDetails');
     }
 
+    function handleGoBack() {
+        navigation.goBack();
+    }
+
+
     return (
         <Container>
             <Header>
-                {/* <BackButton onPress={() => { }} /> */}
+                <BackButton onPress={handleGoBack} />
             </Header>
 
             <CarImages>
