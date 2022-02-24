@@ -5,7 +5,8 @@ import React, {
   ReactNode,
   useEffect,
 } from 'react';
-import { api } from '../services/api';
+
+import { api } from '../service/api';
 import { database } from '../database';
 import { User as UserModel } from '../database/model/User';
 
@@ -32,7 +33,7 @@ interface AuthContextData {
 }
 
 interface AuthProviderProps {
-  children: ReactNode
+  children: ReactNode;
 }
 
 const AuthContext = createContext<AuthContextData>({} as AuthContextData);

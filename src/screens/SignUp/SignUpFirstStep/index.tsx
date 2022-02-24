@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
-import {
-  KeyboardAvoidingView,
-  TouchableWithoutFeedback,
-  Keyboard,
-  Alert
-} from 'react-native';
+
 import { useNavigation } from '@react-navigation/native';
 import { BackButton } from '../../../components/BackButton';
 import { Bullet } from '../../../components/Bullet';
 import { Input } from '../../../components/Input';
 import { Button } from '../../../components/Button';
 import * as Yup from 'yup';
+
+import {
+  KeyboardAvoidingView,
+  TouchableWithoutFeedback,
+  Keyboard,
+  Alert
+} from 'react-native';
 
 import {
   Container,

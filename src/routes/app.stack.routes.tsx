@@ -46,5 +46,4 @@ export function AppStackRoutes() {
 
     </Navigator>
   )
-
 }
