@@ -31,7 +31,7 @@ export const HeaderTop = styled.View`
 `;
 
 export const HeaderTitle = styled.Text`
-  color: ${({ theme }) => theme.colors.background_secondary};
+  color: ${({ theme }) => theme.colors.background_secundary};
   font-family: ${({ theme }) => theme.fonts.secondary_600};
   font-size: ${RFValue(25)}px;
 `;
@@ -99,6 +99,4 @@ export const OptionTitle = styled.Text<OptionProps>`
   color: ${({ theme, active }) => active ? theme.colors.header : theme.colors.text_detail};
 `;
 
-export const Section = styled.View`
-
-`;
+export const Section = styled.View``;

@@ -41,8 +41,6 @@ export function Profile() {
   const [name, setName] = useState(user.name);
   const [driverLicense, setDriverLicense] = useState(user.driver_license);
 
-
-
   const theme = useTheme();
   const navigation = useNavigation();
 
@@ -69,7 +67,6 @@ export function Profile() {
     if (result.uri) {
       setAvatar(result.uri)
       console.log('#### URI ###');
-
       console.log(result.uri)
     }
   }
@@ -101,9 +98,7 @@ export function Profile() {
       } else {
         Alert.alert('Não foi possível atualizar o perfil')
       }
-
     }
-
   }
 
   async function handleSignOut() {
